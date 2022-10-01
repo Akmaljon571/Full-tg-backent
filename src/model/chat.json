@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Qalesan",
+        "kimdan": 1,
+        "kimga": 2,
+        "data": "13:00",
+        "oqildi": true
+    },
+    {
+        "id": 2,
+        "title": "yaxshiman",
+        "kimdan": 2,
+        "kimga": 1,
+        "data": "13:03",
+        "oqildi": true
+    },
+    {
+        "id": 3,
+        "title": "sogliqlarin yaxshimi jgar",
+        "kimdan": 2,
+        "kimga": 1,
+        "data": "13:05",
+        "oqildi": true
+    },
+    {
+        "id": 4,
+        "title": "nma gap",
+        "kimdan": 3,
+        "kimga": 1,
+        "data": "13:04",
+        "oqildi": true
+    },
+    {
+        "id": 5,
+        "title": "Tanidinmi man Akmalman",
+        "kimdan": 3,
+        "kimga": 1,
+        "data": "13:01",
+        "oqildi": true
+    },
+    {
+        "id": 6,
+        "title": "Tanidinmi man Akmalman",
+        "kimdan": 1,
+        "kimga": 2,
+        "data": "14:00",
+        "oqildi": false
+    }
+]
