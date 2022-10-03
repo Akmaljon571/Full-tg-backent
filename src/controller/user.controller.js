@@ -57,19 +57,27 @@ export const postUser = (req, res) => {
 export const postChat = (req, res) => {
     const { id } = req.params
     const { token } = req.headers
-    const tokenId = verify(token)
+    const tokenId = verify(token).id ? verify(token).id : verify(token)
+    console.log(tokenId);
     const findUser = read("user.json").find(e => e.id == id)
+    const User = read("user.json").find(e => e.id == tokenId)
     const AllChat = read("chat.json")
-    const menga = AllChat.filter(e => e.kimga == tokenId && e.kimdan == id)
-    const mendan = AllChat.filter(e => e.kimdan == tokenId && e.kimga == id)
+    const menga = AllChat.filter(e => e.kimga == tokenId && e.kimdan == id || e.kimdan == tokenId && e.kimga == id)
     for (const i in AllChat) {
         if (AllChat[i].kimga == tokenId && AllChat[i].kimdan == id) {
             AllChat[i].oqildi = true
         }
     }
+    let sana = 0
+    for (const i in AllChat) {
+        if (AllChat[i].kimga == tokenId && AllChat[i].kimdan == id || AllChat[i].kimdan == tokenId && AllChat[i].kimga == id) {
+            AllChat[i].forId = sana
+            sana++
+        }
+    }
     write("chat.json", AllChat)
     res.status(200).json({
         findUser: findUser,
-        menga,mendan
+        menga, id, User 
     })
 }

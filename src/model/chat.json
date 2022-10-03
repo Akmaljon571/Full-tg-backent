@@ -5,7 +5,8 @@
         "kimdan": 1,
         "kimga": 2,
         "data": "13:00",
-        "oqildi": true
+        "oqildi": true,
+        "forId": 0
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "kimdan": 2,
         "kimga": 1,
         "data": "13:03",
-        "oqildi": true
+        "oqildi": true,
+        "forId": 1
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "kimdan": 2,
         "kimga": 1,
         "data": "13:05",
-        "oqildi": true
+        "oqildi": true,
+        "forId": 2
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "kimdan": 3,
         "kimga": 1,
         "data": "13:04",
-        "oqildi": true
+        "oqildi": true,
+        "forId": 0
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "kimdan": 3,
         "kimga": 1,
         "data": "13:01",
-        "oqildi": true
+        "oqildi": true,
+        "forId": 1
     },
     {
         "id": 6,
@@ -45,6 +50,7 @@
         "kimdan": 1,
         "kimga": 2,
         "data": "14:00",
-        "oqildi": false
+        "oqildi": true,
+        "forId": 3
     }
 ]
